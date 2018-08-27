@@ -5,6 +5,7 @@ import {
   Text,
   View,
 } from 'react-native';
+import PropTypes from 'prop-types';
 
 export default class MJCallout extends Component {
   static defaultProps = {
@@ -190,5 +191,5 @@ const styles = StyleSheet.create({
 })
 
 MJCallout.propTypes = {
-  arrowDirection: React.PropTypes.oneOf(['up', 'down', 'left', 'right'])
+  arrowDirection: PropTypes.oneOf(['up', 'down', 'left', 'right'])
 };
